@@ -32,12 +32,3 @@ def fib_bottom_up(n):
 def test_fib_bottom_up():
     n = 10
     assert fib_bottom_up(n) == 55
-
-
-def fib_bottom_up_better(n):
-    ###TODO
-    pass
-
-def test_fib_bottom_up_better():
-    n = 10
-    assert fib_bottom_up_better(n) == 55

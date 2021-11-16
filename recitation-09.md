@@ -38,7 +38,9 @@ Today we'll learn more about dynamic programming using the classic problem of co
 
 
 
-**5** Clearly, this implementation does a ridiculous amount of duplicate work. We should really only have to compute each $F_i$ one time, for $i \le n$. We'll next write two more efficient ways of computing $F_n$. In the first one, we'll keep an additional list called `fibs`, where `fibs[i] = F_i`, to store each value we encounter during the recursive solution. When the function is called for input $i$, we first check if $F_i$ is in `fibs`. If so, we simply return it. Otherwise, we proceed with the recursive calls. Note that we initialize `fibs` with -1's so we can tell if $F_i$ has been computed or not. Complete `fib_top_down` and test with `test_fib_top_down`. 
+Clearly, this implementation does a ridiculous amount of duplicate work. We should really only have to compute each $F_i$ one time, for $i \le n$. We'll next write two more efficient ways of computing $F_n$. 
+
+**5** For the first efficient way, we'll implement it recursively as before except that we will also keep an additional list called `fibs`, where `fibs[i] = F_i`, to store each value we generate during the recursive solution. When the function is called for input $i$, we first check if $F_i$ is in `fibs`. If so, we simply return it. Otherwise, we proceed with the recursive calls. Note that we initialize `fibs` with -1's so we can tell if $F_i$ has been computed or not. Complete `fib_top_down` and test with `test_fib_top_down`. 
 
 
 .  
