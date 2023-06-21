@@ -6,7 +6,7 @@ Today we'll learn more about dynamic programming using the classic problem of co
 |-|-|-|-|-|-|-|-|-|-|- |
 |0|1|1|2|3|5|8|13|21|34|55|
 
-**1** Implement a recursive solution by completing `fib_recursive` and test it with `test_fib_recursive`. In addition to $n$, we also use an array called `counts` that keeps track of how many times each $F_i$ is computed when computing $F_n$.
+**1** Implement a recursive solution by completing `fib_recursive` and test it with `test_fib_recursive`. In addition to $n$, `fib_recursive` takes in an array called `counts`. This array keeps track of how many times each $F_i$ is computed when computing $F_n$ (implemented).
 
 .  
 .  
@@ -29,7 +29,7 @@ Today we'll learn more about dynamic programming using the classic problem of co
 .  
 .  
 
-**4** Inspecting the `counts` list, what interesting pattern emerges?
+**4** Inspect the `counts` list. What interesting pattern emerges?
 
 **put answer in answers.md**  
 .  
